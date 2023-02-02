@@ -17,8 +17,8 @@ REGRA,A,B,TAM,PT_V
 16,ARG,num,1,0
 17,ARG,id,1,0
 18,A,CMD A,2,0
-19,CMD,id atr LD pt_v,4,1
-20,LD,OPRD opa OPRD,3,0
+19,CMD,id rcb LD pt_v,4,1
+20,LD,OPRD opm OPRD,3,0
 21,LD,OPRD,1,0
 22,OPRD,id,1,0
 23,OPRD,num,1,0
@@ -30,4 +30,11 @@ REGRA,A,B,TAM,PT_V
 29,CP,CMD CP,2,0
 30,CP,COND CP,2,0
 31,CP,fimse,1,0
-32,A,fim,1,0
+32,A,R A,2,0
+33,R,CABR CPR,2,0
+34,CABR,repita ab_p EXP_R fc_p,4,0
+35,CPR,ES CPR,2,0
+36,CPR,CMD CPR,2,0
+37,CPR,COND CPR,2,0
+38,CPR,fimrepita,1,0
+39,A,fim,1,0
